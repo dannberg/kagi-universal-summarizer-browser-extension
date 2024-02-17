@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Universal Summarizer</title>
+  <style>
+    body {
+      margin: 10px;
+      font-family: Arial, sans-serif;
+    }
+    #summarize {
+      margin: 20px auto 0 auto; /* Added top padding of 20px */
+      display: block;
+    }
+    #settings-container {
+      text-align: left;
+      margin-top: 20px;
+    }
+    hr {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <button id="summarize">Summarize</button>
+  <hr>
+  <div id="settings-container">
+    <label for="summaryType">Summary Type:</label>
+    <select id="summaryType">
+      <option value="takeaway">Key Moments</option>
+      <option value="summary">Summary</option>
+    </select>
+    <button id="save">Save</button>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
